@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Project-local Wolfram runtime state
+.pi/wolfram/state.json
+.pi/wolfram/runs/
+
+# Local caches
+.pytest_cache/

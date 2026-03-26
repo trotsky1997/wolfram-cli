@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wolfram-cli"
+version = "0.1.2"
+description = "Project-local Wolfram Alpha CLI with agent-friendly output"
+readme = "wolfram_cli.md"
+requires-python = ">=3.12"
+dependencies = [
+  "requests>=2.33.0",
+]
+
+[project.scripts]
+wolfram-cli = "wolfram_cli_tool.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wolfram_cli_tool"]
